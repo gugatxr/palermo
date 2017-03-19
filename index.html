@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="">
+	
+	<div class="container">
+		<h1 class="title" >Interpretador de código</h1>
+		<div class="tabs is-fullwidth is-centered">
+			<ul>
+			  <li  class="is-active"><a href="#php" onclick="activateTab(this)">PHP</a></li>
+			  <li ><a href="#shell" onclick="activateTab(this)">Shell</a></li>
+			</ul>
+		</div>
+
+
+		<section>
+		  <div id="php" class="tab-content">
+		<label for="cod_php">Código PHP</label>
+		<textarea id="cod_php" class="textarea mousetrap cod_php "></textarea>
+
+		<div class="field is-grouped">
+			<p class="control">
+				<a href="#" class="button is-primary envia">Enviar</a>
+			</p>
+			<p class="control">
+				<a href="#" class="button is-danger limpar_tela">Limpar tela </a>
+			</p>
+		</div>
+
+		<div class="result"></div>
+		  </div>
+		  <div id="shell" class="tab-content">
+		  	Conteúdo do profile
+		  </div>
+		</section>
+		<div class="tile is-ancestor">
+
+
+</div>
+	</div>
+
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/mousetrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>
